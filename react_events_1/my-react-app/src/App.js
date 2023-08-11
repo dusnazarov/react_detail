@@ -1,15 +1,15 @@
-// 1) /////////////////////////////////////////
-// import React, {useState} from "react";
+import React, {useState} from "react";
 
+// 1) /////////////////////////////////////////
 // export default function App() {
 //     const [count, setCount] = useState(0)
 
 //     const increase = () => {
-//         setCount(count + 1)
+//         setCount(prevCount => prevCount + 1)
 //     };
 
 //     const decrease = () => {
-//         setCount(count - 1)
+//         setCount(prevCount => prevCount - 1)
 //     };
 
 //     const setToZero = () => {
@@ -28,7 +28,6 @@
 
 
 // 2) ///////////////  Show and Hide text  //////////////////////////
-// import React, {useState} from "react";
 
 // export default function App() {
 //     const [showText, setShowText] = useState(true)
@@ -51,8 +50,6 @@
 
 
 // 3) ///////////////  Change Color   //////////////////////////
-import React, {useState} from "react";
-
 export default function App() {
     const [textColor, setTextColor] = useState("black")
 

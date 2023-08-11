@@ -1,5 +1,3 @@
-
-
 function load() {
     return fetch('https://reqres.in/api/users')
     .then((res) => res.json())
@@ -8,5 +6,4 @@ function load() {
         console.log(err);
     });
 }
-
 export default load;

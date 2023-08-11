@@ -1,14 +1,14 @@
-// 1) /////////////////////////////////////////////////
-// import React from "react"
-// import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom"
-// import  Home  from "./components/Home"
-// import Profile  from "./components/Profile"
-// import About from "./components/About"
-// import Error from "./components/Error"
-// import Layout from "./layout/Layout"
-// import { Data, dataLoader } from "./layout/Data"
+import React from "react"
+import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom"
+import  Home  from "./components/Home"
+import Profile  from "./components/Profile"
+import About from "./components/About"
+import Error from "./components/Error"
+import Layout from "./layout/Layout"
+import { Data, dataLoader } from "./layout/Data"
 
- 
+
+// 1) ///////////////////////////////////////////////// 
 // export default function App()  {
 
 //     const router = createBrowserRouter(
@@ -31,16 +31,6 @@
 
 
 // 2) /////////////////////////////////////////////////
-// import React from "react"
-// import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom"
-// import  Home  from "./components/Home"
-// import Profile  from "./components/Profile"
-// import About from "./components/About"
-// import Error from "./components/Error"
-// import {Data, dataLoader } from "./layout/Data"
-// import Layout from "./layout/Layout"
-
- 
 // export default function App()  {
 
 //     const router = createBrowserRouter(
@@ -62,16 +52,6 @@
 // };
 
 // 3) /////////////////////////////////////////////////
-import React from "react"
-import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom"
-import  Home  from "./components/Home"
-import Profile  from "./components/Profile"
-import About from "./components/About"
-import Error from "./components/Error"
-import Layout from "./layout/Layout"
-import { Data, dataLoader } from "./layout/Data"
-
- 
 export default function App()  {
 
     const router = createBrowserRouter(

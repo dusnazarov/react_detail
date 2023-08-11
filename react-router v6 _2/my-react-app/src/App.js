@@ -1,14 +1,16 @@
-// 1) ///////////////////////
-// import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
-// import "./App.css";
-// import Home from "./components/Home";
-// import Products from "./components/products/Products";
-// import Login from "./components/Login";
-// import Search from "./components/products/Search";
-// import AddProduct from "./components/products/AddProduct";
-// import ProductDisplay from "./components/products/ProductDisplay";
-// import ListProducts from "./components/products/ListProducts";
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import Products from "./components/products/Products";
+import Login from "./components/Login";
+import Search from "./components/products/Search";
+import AddProduct from "./components/products/AddProduct";
+import ProductDisplay from "./components/products/ProductDisplay";
+import ListProducts from "./components/products/ListProducts";
 
+
+
+// 1) ///////////////////////
 // function App() {
 //   return (
 //     <Router>
@@ -29,23 +31,10 @@
 //     </Router>
 //   );
 // }
-
-
-
 // export default App;
 
 
 // 2) ///////////////////////
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
-import "./App.css";
-import Home from "./components/Home";
-import Products from "./components/products/Products";
-import Login from "./components/Login";
-import Search from "./components/products/Search";
-import AddProduct from "./components/products/AddProduct";
-import ProductDisplay from "./components/products/ProductDisplay";
-import ListProducts from "./components/products/ListProducts";
-
 function App() {
   return (
     <Router>

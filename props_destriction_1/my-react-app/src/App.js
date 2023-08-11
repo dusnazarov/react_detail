@@ -1,8 +1,9 @@
-// 1)  ///////////////////////////////////////////
-// import React from "react"
+import React from "react"
+import {User} from "./User"
 
+// 1)  ///////////////////////////////////////////
 // export default function App() {
-//     return(
+//     return (
 //         <div>
 //             <User />
 //         </div>
@@ -22,7 +23,6 @@
 // }
 
 // 2)  ///////////////////////////////////////////
-// import React from "react"
 
 // export default function App() {
 //     return (
@@ -56,6 +56,7 @@
 //     );        
 // };
 
+// // ///////// destruction /////////
 // // const User = ({ id, name, age, email }) => {
 // //     return (
 // //         <div>
@@ -64,6 +65,7 @@
 // //     );
 // // };
 
+// ///////// props /////////
 // const User = (props) => {
 //     return (
 //         <div>
@@ -73,8 +75,6 @@
 // };
 
 // 3)  ///////////////////////////////////////////
-// import React from "react"
-
 
 // export default function App() {
 //     const user1 = 
@@ -135,8 +135,6 @@
 
 
 // 4)  ///////////////////////////////////////////
-// import React from "react"
-
 
 // export default function App() {
 //     const users = [
@@ -157,19 +155,15 @@
 //             name:"Zohid",
 //             age:20,
 //             email:"zohid@gmail.com"
-//         },
-//         {
-//             id:3,
-//             name:"Qodir",
-//             age:28,
-//             email:"qodir@gmail.com"
 //         }
+        
 //     ];
   
 //     return (
 //         <div>          
 //             {
 //                 users.map((user) => {
+//                     console.log(user.id)
 //                     return (                        
 //                         <User
 //                             id={user.id}
@@ -202,9 +196,6 @@
 
 
 // 5)  ///////////////////////////////////////////
-// import React from "react"
-// import {User} from "./User"
-
 
 // export default function App() {
 //     const users = [
@@ -227,7 +218,7 @@
 //             email:"zohid@gmail.com"
 //         },
 //         {
-//             id:3,
+//             id:4,
 //             name:"Qodir",
 //             age:28,
 //             email:"qodir@gmail.com"
@@ -253,7 +244,6 @@
 // }
 
 // 6) ////////////////////////////////////////////
-// import React from "react"
 
 // export default function App() {
 //     const users = [
@@ -276,7 +266,7 @@
 //             email:"zohid@gmail.com"
 //         },
 //         {
-//             id:3,
+//             id:4,
 //             name:"Qodir",
 //             age:28,
 //             email:"qodir@gmail.com"
@@ -299,50 +289,49 @@
 // };
 
 // 7) ///////////////////////////////////////////
-// import React from "react"
 
-// export default function App() {
-//     const users = [
-//         {
-//             id:1,
-//             name:"Bahrom",
-//             age:21,
-//             email:"bahrom@gmail.com"
-//         },
-//         {
-//             id:2,
-//             name:"Nodir",
-//             age:22,
-//             email:"nodir@gmail.com"
-//         },
-//         {
-//             id:3,
-//             name:"Zohid",
-//             age:20,
-//             email:"zohid@gmail.com"
-//         },
-//         {
-//             id:3,
-//             name:"Qodir",
-//             age:28,
-//             email:"qodir@gmail.com"
-//         }
-//     ];
+export default function App() {
+    const users = [
+        {
+            id:1,
+            name:"Bahrom",
+            age:21,
+            email:"bahrom@gmail.com"
+        },
+        {
+            id:2,
+            name:"Nodir",
+            age:22,
+            email:"nodir@gmail.com"
+        },
+        {
+            id:3,
+            name:"Zohid",
+            age:20,
+            email:"zohid@gmail.com"
+        },
+        {
+            id:4,
+            name:"Qodir",
+            age:28,
+            email:"qodir@gmail.com"
+        }
+    ];
      
-//     return (
-//         <div>
-//             {
-//                 users.map((user) => {
-//                     return (
-//                         <div>           
-//                             <h5 key={user.id}>{user.id} ) My name is {user.name}, my email is {user.email} and I am is {user.age} years old</h5>              
-//                         </div>
-//                     )
-//                 })
-//             }            
-//         </div>
-//     );
-// };
+    return (
+        <div>
+            {
+                users.map((user) => {
+                    return (
+                        <div>           
+                            <h5 key={user.id}>{user.id} ) My name is {user.name}, my email is {user.email} and I am is {user.age} years old</h5>              
+                        </div>
+                    )
+                })
+            }            
+        </div>
+    );
+};
 
 
 

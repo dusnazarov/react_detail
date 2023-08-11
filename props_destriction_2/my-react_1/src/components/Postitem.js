@@ -68,23 +68,26 @@
 // };
 
 // 2) ////////////////////////////////////////
-// export default function Postitem(props) {    
-//     return (       
-//         <div className="contact-card">
-//             <img src={props.avatar} alt="img"/>
-//             <h3>{props.first_name} {props.last_name}</h3>
-//             <div className="info-group">
-//                 <img src="./images/phone-icon.png" alt="phone" />
-//                 <p>{props.phone}</p>
-//             </div>
-//             <div className="info-group">
-//                 <img src="./images/mail-icon.png" alt="mail" />
-//                 <p>{props.email}</p>
-//             </div>
-//         </div> 
-//     )
-// };
 
+// ///////// props  ////////
+// // export default function Postitem(props) {    
+// //     return (       
+// //         <div className="contact-card">
+// //             <img src={props.avatar} alt="img"/>
+// //             <h3>{props.first_name} {props.last_name}</h3>
+// //             <div className="info-group">
+// //                 <img src="./images/phone-icon.png" alt="phone" />
+// //                 <p>{props.phone}</p>
+// //             </div>
+// //             <div className="info-group">
+// //                 <img src="./images/mail-icon.png" alt="mail" />
+// //                 <p>{props.email}</p>
+// //             </div>
+// //         </div> 
+// //     )
+// // };
+
+// ///////// destriction    ////////
 // export default function Postitem({first_name, last_name, avatar, phone, email}) {    
 //     return (       
 //         <div className="contact-card">
@@ -103,79 +106,46 @@
 // };
 
 
-// 3) ////////////////////////////////////////
-// export default function Postitem(props) {    
-//     return (       
-//         <div className="contact-card">
-//             <img src={props.user.avatar} alt="img"/>
-//             <h3>{props.user.first_name} {props.user.last_name}</h3>
-//             <div className="info-group">
-//                 <img src="./images/phone-icon.png" alt="phone" />
-//                 <p>{props.user.phone}</p>
-//                 <p>12358478</p>
-//             </div>
-//             <div className="info-group">
-//                 <img src="./images/mail-icon.png" alt="mail" />
-//                 <p>{props.user.email}</p>
-//             </div>
-//         </div> 
-//     );
-// };
-
-
-// // export default function Postitem({user}) {   
-
+// 3), 4) and 5) ////////////////////////////////////////
+///////////  props  ////////////////
+// // export default function Postitem( props ) {    
 // //     return (       
 // //         <div className="contact-card">
-// //             <img src={user.avatar} alt="img"/>
-// //             <h3>{user.first_name} {user.last_name}</h3>
+// //             <img src={props.user.avatar} alt="img"/>
+// //             <h3>{props.user.first_name} {props.user.last_name}</h3>
 // //             <div className="info-group">
 // //                 <img src="./images/phone-icon.png" alt="phone" />
-// //                 <p>{user.phone}</p>
+// //                 <p>{props.user.phone}</p>
+// //                 <p>12358478</p>
 // //             </div>
 // //             <div className="info-group">
 // //                 <img src="./images/mail-icon.png" alt="mail" />
-// //                 <p>{user.email}</p>
-// //             </div>
-// //         </div>
-// //     );
-// // };
-
-// 4) va 5) ////////////////////////////////////////////
-// export default function Postitem( props ) {
-       
-//     return (       
-//         <div className="contact-card">
-//             <img src={ props.user.avatar } alt="img"/>
-//             <h3>{props.user.first_name} {props.user.last_name}</h3>
-//             <div className="info-group">
-//                 <img src="./images/phone-icon.png" alt="phone" />                              
-//             </div>
-//             <div className="info-group">
-//                 <img src="./images/mail-icon.png" alt="mail" />
-//                 <p>{props.user.email}</p>
-//             </div>
-//         </div> 
-//     );
-// };
-
-
-// // export default function Postitem({ user }) {
-       
-// //     return (       
-// //         <div className="contact-card">
-// //             <img src={ user.avatar } alt="img"/>
-// //             <h3>{user.first_name} {user.last_name}</h3>
-// //             <div className="info-group">
-// //                 <img src="./images/phone-icon.png" alt="phone" />                              
-// //             </div>
-// //             <div className="info-group">
-// //                 <img src="./images/mail-icon.png" alt="mail" />
-// //                 <p>{user.email}</p>
+// //                 <p>{props.user.email}</p>
 // //             </div>
 // //         </div> 
 // //     );
 // // };
+
+
+// ///////////  destriction  //////////////// 
+export default function Postitem( { user } ) {    
+    return (       
+        <div className="contact-card">
+            <img src={user.avatar} alt="img"/>
+            <h3>{user.first_name} {user.last_name}</h3>
+            <div className="info-group">
+                <img src="./images/phone-icon.png" alt="phone" />
+                <p>{user.phone}</p>
+            </div>
+            <div className="info-group">
+                <img src="./images/mail-icon.png" alt="mail" />
+                <p>{user.email}</p>
+            </div>
+        </div>
+    );
+};
+
+
 
 
 

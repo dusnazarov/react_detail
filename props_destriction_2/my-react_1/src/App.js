@@ -1,8 +1,13 @@
-// 1) //////////////////////////////////////
-// import React from 'react'
-// import './styles/App.css'
-// import Postitem from  './components/Postitem'
+import React from 'react'
+import './styles/App.css'
+import Postitem from  './components/Postitem'
+import PostitemMap from  './components/PostitemMap'
+import load from "./users";
+import {useEffect, useState} from "react"
 
+
+
+// 1) //////////////////////////////////////
 //  export default function App() {    
 //     return (      
 //         <Postitem/>        
@@ -11,9 +16,6 @@
 
 
 // 2) ///////////////////////////////////
-// import React from 'react'
-// import './styles/App.css'
-// import Postitem from  './components/Postitem'
 
 //  export default function App() {    
 //     return (
@@ -62,9 +64,6 @@
 
 
 // 3) ///////////////////////////////////
-// import React from 'react'
-// import './styles/App.css'
-// import Postitem from  './components/Postitem'
 
 //  export default function App() {    
 //     const user1 =  {
@@ -110,16 +109,11 @@
 //         <Postitem user={user3}/>       
 //         <Postitem user={user4}/>       
 //         <Postitem user={user5}/>       
-//       </div>
-     
+//       </div>     
 //     );
 // };
 
 // 4) ////////////////////////////////////////////////////
-// import React from 'react'
-// import './styles/App.css'
-// import PostitemMap from  './components/PostitemMap'
-
 
 //  export default function App() {
 //     const users = [
@@ -170,26 +164,21 @@
 
 
 // 5) //////////////// fetch data  ////////////////////////////////
-// import './styles/App.css'
-// import PostitemMap from "./components/PostitemMap";
-// import load from "./users";
-// import {useEffect, useState} from "react"
 
-
-// function App() {
-//     const [users, setUsers] = useState([]);
+function App() {
+    const [users, setUsers] = useState([]);
     
-//     useEffect(() => {
-//         load().then((data) => setUsers(data));
-//     },[]);
+    useEffect(() => {
+        load().then((data) => setUsers(data));
+    },[]);
 
-//     return (
-//       <div className="contacts">
-//         <PostitemMap users={users} />
-//       </div>
-//     );
-// };
-// export default App;
+    return (
+      <div className="contacts">
+        <PostitemMap users={users} />
+      </div>
+    );
+};
+export default App;
 
 
 
